@@ -66,7 +66,13 @@ $hotels = [
 </head>
 
 <body>
-
+  <ul>
+    <?php foreach ($hotels as $hotelClass) {
+      foreach ($hotelClass as $hotel) {
+        echo '<li>' . $hotel;
+      }
+    } ?>
+  </ul>
 </body>
 
 </html>
