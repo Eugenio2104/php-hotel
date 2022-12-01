@@ -11,7 +11,6 @@ Bonus:
 <?php
 
 $hotels = [
-
   [
     'name' => 'Hotel Belvedere',
     'description' => 'Hotel Belvedere Descrizione',
@@ -76,7 +75,7 @@ $hotels = [
             <th scope="col">Descrizione</th>
             <th scope="col">Parcheggio</th>
             <th scope="col">Voto</th>
-            <th scope="col">Distanza dal centro/th>
+            <th scope="col">Distanza dal centro</th>
           </tr>
         </thead>
         <tbody>
@@ -84,7 +83,7 @@ $hotels = [
             <tr>
               <th scope="row"><?php echo $hotel['name']; ?></th>
               <td><?php echo $hotel['description']; ?></td>
-              <td><?php echo $hotel['parking']; ?></td>
+              <td><?php echo $hotel['parking'] ? 'Si' : 'No'; ?></td>
               <td><?php echo $hotel['vote']; ?></td>
               <td><?php echo $hotel['distance_to_center']; ?></td>
             </tr>
